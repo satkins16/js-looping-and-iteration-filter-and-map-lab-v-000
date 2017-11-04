@@ -7,5 +7,6 @@ function driverNamesWithRevenueOver(drivers, revenue) {
 }
 
 function exactMatch(drivers, attribute) {
+  let matches = []
   return drivers.filter(function(driver) { return driver[attribute] === attribute[0] })
 }

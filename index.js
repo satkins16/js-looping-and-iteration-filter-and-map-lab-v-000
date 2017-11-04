@@ -16,7 +16,7 @@ function exactMatch(drivers, attribute) {
   })
 }
 
-function exactMatch(drivers, attribute) {
+function exactMatchToList(drivers, attribute) {
   return drivers.filter(function(driver) {
     let matches = []
     for (const key in attribute) {

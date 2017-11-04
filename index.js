@@ -15,3 +15,13 @@ function exactMatch(drivers, attribute) {
     return matches
   })
 }
+
+function exactMatch(drivers, attribute) {
+  return drivers.filter(function(driver) {
+    let matches = []
+    for (const key in attribute) {
+      matches = driver[key] == attribute[key]
+    }
+    return matches
+  })
+}

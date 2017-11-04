@@ -13,4 +13,5 @@ function exactMatch(drivers, attribute) {
       matches = driver[key] == attribute[key]
     }
   }
+  return matches
 }
